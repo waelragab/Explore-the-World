@@ -1,0 +1,134 @@
+@font-face{
+    font-family: latoBold;
+    src: url("fonts/Lato-Bold.ttf");
+}
+@font-face{
+    font-family: latoReg;
+    src: url("fonts/Lato-Regular.ttf");
+}
+@font-face{
+    font-family: montserat;
+    src: url("fonts/Montserrat-Bold.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: #DBDEE5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.body-container{
+    background-color: #4A4A5A;
+    width: 80%;
+    margin: auto;
+    height: 85%;
+    color: #fff;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    text-transform: capitalize;
+    font-family: "latoBold";
+    font-size: 15px;
+}
+ul li{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+ul li:hover{
+    color: #F5A623;
+}
+ul li:active{
+    color: #F5A623;
+}
+.btn{
+    width: 154px;
+    height: 52px;
+    background-color: #F5A623;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 0;
+    font-size: 15px;
+
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    height: 80vh;
+    flex-direction: column;
+}
+.container h1{
+    font-family: "montserat";
+    margin-bottom: 20px;
+}
+.container p{
+    font-family: "latoReg";
+    text-align: center;
+    width: 50%;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+.form-group{
+    width: 60vw;
+    margin: 0 auto;
+    height: 71px;
+    background-color: #666574;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   border-radius: 5px;
+
+}
+.form-group i{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.form-group input[type = "text"]{
+    height: 71px;
+    background-color: transparent;
+    width: 871px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 20px;
+    color: #fff;
+    font-family: "latoReg";
+}
+.form-group input[type = "text"]::placeholder{
+    color: #fff;
+    opacity: 0.7;
+    font-family: "latoReg";
+}
+.form-group input[type = "submit"]{
+    width: 188px;
+    height: 71px;
+    background-color: #4A90E2;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 21px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+h1 i{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+h1 i:hover{
+    transform: rotate(360deg);
+}
